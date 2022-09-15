@@ -67,6 +67,6 @@ describe('Testa GET /items/:id ', () => {
   });
 });
 
-beforeAll(async () => {
+afterAll(async () => {
   await prisma.$disconnect()
 })
